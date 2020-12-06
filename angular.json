@@ -24,9 +24,11 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
@@ -120,5 +122,8 @@
       }
     }
   },
-  "defaultProject": "AngularMaximilian"
+  "defaultProject": "AngularMaximilian",
+  "cli": {
+    "analytics": "457b51f5-68c6-4d5c-a0ba-8b6f0a4a3935"
+  }
 }
