@@ -1,27 +1,29 @@
-.content{
-    margin-top: 30px;
-    display: flex;
+.content {
+  margin-top: 30px;
+  display: flex;
 }
 
-input{
-    margin-right: 10px;
+input {
+  margin-right: 10px;
 }
 
-.table{
-    margin-top: 40px;
+.table {
+  margin-top: 40px;
 }
-.red{
-    border: 2px solid rgb(255, 0, 0);
+
+.red {
+  border: 2px solid rgb(255, 0, 0);
 }
 
 
-.show{
-    display: block;
+.show {
+  display: block;
 }
 
-.hide{
-display: none;
+.hide {
+  display: none;
 }
-.colorRed{
-    color: red;
+
+.colorRed {
+  color: red;
 }

@@ -14,44 +14,43 @@ export class TaskComponent implements OnInit {
   save: string;
   taskIndex: number;
   isHide: string = 'hide';
-  isRed:boolean;
-  redColor:boolean
+  isRed: boolean;
+  redColor: boolean;
 
+  constructor(){}
 
-  constructor() { }
+  ngOnInit():void{}
 
-  ngOnInit(): void { }
-
-
-  addTask() {
-    if(this.value){
+  addTask(){
+    if (this.value) {
       let TASK = new Tasks(this.value);
       this.arr.push(TASK);
       this.value = ''
       this.isRed = false;
-    }else{
-      alert("Pshov nach");
+    } else {
+      alert("Write Something");
       this.isRed = true;
     }
-    
   }
+
   deleteTask(index: number): void {
     this.arr.splice(index, 1);
   }
+
   editTask(index: number): void {
     this.save = this.arr[index].name
     this.taskIndex = index
     this.isHide = 'show';
   }
+
   saveTask(): void {
     this.arr[this.taskIndex].name = this.save
     this.save = ''
     this.isHide = 'hide';
   }
+
   active(index: number): void {
     this.arr[index].status = !this.arr[index].status
-    console.log(this.arr);
-
   }
 }
 
